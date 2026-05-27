@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Términos y Condiciones - Laboratorio de Cómputo</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="../styles/rules.css">
+</head>
+
+<body>
+
+  <section>
+    <div class="img">
+      <img src="../images/rules.png" alt="Imagen de pergamino" class="pergamino">
+    </div>
+    <h1>Términos y Condiciones</h1>
+
+    <h2>Por favor, lea detenidamente los siguientes términos y condiciones antes de utilizar el laboratorio de cómputo:
+    </h2>
+
+    <ol>
+      <li>El uso del laboratorio de cómputo está permitido únicamente para fines académicos.</li>
+      <li>Está prohibido instalar software adicional en los equipos del laboratorio.</li>
+      <li>El usuario es responsable de la integridad física de los equipos y accesorios utilizados.</li>
+      <li>El usuario es responsable de la confidencialidad y seguridad de la información que maneje.</li>
+      <li>El usuario es responsable de mantener el orden y limpieza en el área de trabajo asignada.</li>
+    </ol>
+
+    <hr>
+
+    <h2>SANCIONES</h2>
+
+    <p>Será motivo de sanción:</p>
+
+    <ol>
+      <li>Fumar dentro del laboratorio.</li>
+      <li>Introducir e ingerir bebidas y/o alimentos.</li>
+      <li>Faltar al respeto al personal responsable del laboratorio.</li>
+      <li>Utilizar el equipo en trabajos ajenos a los autorizados dentro de la Unidad.</li>
+      <li>La indisciplina o conducta inadecuada en los laboratorios, así como escuchar música dentro de ellos.</li>
+      <li>Dañar deliberadamente a las instalaciones, equipos, software, accesorios y/o recursos de los laboratorios, así
+        como desconfigurar equipo de cómputo. Desacato al presente reglamento.</li>
+    </ol>
+
+    <p>Las sanciones por incurrir en cualquiera de los puntos marcados en el artículo son:</p>
+
+    <ol>
+      <li>En la primera incidencia, expulsión del área por ese día.</li>
+      <li>En la segunda incidencia, expulsión del área por un mes, con registro al expediente.</li>
+      <li>En la tercera incidencia, se turnará el caso a la comisión de honor de la Unidad.</li>
+      <li>En incidencia del articulo X inciso f, el infractor deberá además cubrir los costos de reparación o reposición
+        del bien dañado y será acreedor a una nota a su expediente y/o a que se turne su caso a la comisión de honor de
+        la UPIIT.</li>
+    </ol>
+
+    <div class="aceptar">
+
+      <a href="/php-login/calendar/dynamic-full-calendar.php" class="btn">Aceptar y continuar</a>
+    </div>
+  </section>
+
+
+</body>
+
+</html>

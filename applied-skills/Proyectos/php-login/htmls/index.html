@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Welcome to you WebApp</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/index.css">
+
+    <a href="logout.php" class="boton-derecha">Cerrar sesión</a>
+
+</head>
+
+<body>
+
+    <section>
+
+        <div>
+            <img src="../images/ipn.png" alt="logo ipn" class="logo">
+            <h1>LABORATORIOS DE COMPUTO UPIIT</h1>
+        </div>
+
+        <?php require 'partials/header.php' ?>
+
+        <?php if(!empty($user)): ?>
+
+        <h2>Bienvenido.</h2>
+        <?= $user['email']; ?>
+        <!--<br>Iniciaste sesion -->
+
+        <?php else: ?>
+        <h2>Please Login or SignUp</h2>
+
+        <a href="login.php">Login</a> or
+        <a href="signup.php">SignUp</a>
+
+        <a href="terms/rules_v2.php">
+            <br>
+            <br>
+            <!--<a href="logout.php">-->
+            Terminos y Condiciones
+        </a>
+
+        <?php endif; ?>
+    </section>
+</body>
+
+</html>
