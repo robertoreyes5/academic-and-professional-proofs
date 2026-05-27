@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "357309099599",
+    "project_id": "flotilla-d9efb",
+    "storage_bucket": "flotilla-d9efb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:357309099599:android:0f7e811e2d40c117d9c43a",
+        "android_client_info": {
+          "package_name": "com.example.flotilla"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBVS5tAIaNs_HRqA-qA_LQgA68FViHjAo4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
