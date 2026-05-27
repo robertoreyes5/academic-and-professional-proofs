@@ -1,0 +1,40 @@
+--Asignacion de librerias
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_unsigned.all;
+
+entity memoria_ram is
+geric(N : positive;=5);
+--Asignacion de variables
+
+port  (clk_i : in std_logic;
+		rst_i: in std_logic;
+		so_o :out std_logic;
+		q_o :out std_logic_vector(N-1 downto 0)
+
+end entity memoria_ram;
+
+architecture Arq of memoria_ram is 
+	signal si: std_logic;
+	signal auxQ:std_logic_vector(N-1 downto 0);
+
+begin
+	Genera:
+	process (clk_i) begin
+	--rising_edge
+	if rising_edge (clk_i) then 
+		if rst_i='1' or unsigned(auxQ)=1 then
+			auxQ <=(others => '0');
+		else 
+			auxQ <=si &auxQ(N-1 downto 1);
+			
+			end if;
+			end if;
+	end process Genera;
+
+	q_o <=auxQ;
+	so_o <='1' when unsigned(auxQ)=0 else
+			auxQ(2) xor auxQ(0);
+		
+		
+end architecture Arq;

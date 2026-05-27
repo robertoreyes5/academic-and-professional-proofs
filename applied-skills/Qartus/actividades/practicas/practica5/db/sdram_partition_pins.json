@@ -1,0 +1,85 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "dato[0]",
+					"strict" : false
+				},
+				{
+					"name" : "dato[1]",
+					"strict" : false
+				},
+				{
+					"name" : "dato[2]",
+					"strict" : false
+				},
+				{
+					"name" : "dato[3]",
+					"strict" : false
+				},
+				{
+					"name" : "count[0]",
+					"strict" : false
+				},
+				{
+					"name" : "count[1]",
+					"strict" : false
+				},
+				{
+					"name" : "count[2]",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "reset",
+					"strict" : false
+				},
+				{
+					"name" : "iwes",
+					"strict" : false
+				},
+				{
+					"name" : "into",
+					"strict" : false
+				},
+				{
+					"name" : "ies",
+					"strict" : false
+				},
+				{
+					"name" : "dir[2]",
+					"strict" : false
+				},
+				{
+					"name" : "dir[1]",
+					"strict" : false
+				},
+				{
+					"name" : "dati[0]",
+					"strict" : false
+				},
+				{
+					"name" : "dir[0]",
+					"strict" : false
+				},
+				{
+					"name" : "dati[1]",
+					"strict" : false
+				},
+				{
+					"name" : "dati[2]",
+					"strict" : false
+				},
+				{
+					"name" : "dati[3]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

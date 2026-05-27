@@ -1,0 +1,35 @@
+|practica1
+reset => contDec[0].ACLR
+reset => contDec[1].ACLR
+reset => contDec[2].ACLR
+reset => contDec[3].ACLR
+reset => contUni[0].ACLR
+reset => contUni[1].ACLR
+reset => contUni[2].ACLR
+reset => contUni[3].ACLR
+clk => contDec[0].CLK
+clk => contDec[1].CLK
+clk => contDec[2].CLK
+clk => contDec[3].CLK
+clk => contUni[0].CLK
+clk => contUni[1].CLK
+clk => contUni[2].CLK
+clk => contUni[3].CLK
+pausa => contDec[0].ENA
+pausa => contUni[3].ENA
+pausa => contUni[2].ENA
+pausa => contUni[1].ENA
+pausa => contUni[0].ENA
+pausa => contDec[3].ENA
+pausa => contDec[2].ENA
+pausa => contDec[1].ENA
+uni[0] << contUni[0].DB_MAX_OUTPUT_PORT_TYPE
+uni[1] << contUni[1].DB_MAX_OUTPUT_PORT_TYPE
+uni[2] << contUni[2].DB_MAX_OUTPUT_PORT_TYPE
+uni[3] << contUni[3].DB_MAX_OUTPUT_PORT_TYPE
+dec[0] << contDec[0].DB_MAX_OUTPUT_PORT_TYPE
+dec[1] << contDec[1].DB_MAX_OUTPUT_PORT_TYPE
+dec[2] << contDec[2].DB_MAX_OUTPUT_PORT_TYPE
+dec[3] << contDec[3].DB_MAX_OUTPUT_PORT_TYPE
+
+

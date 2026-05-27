@@ -1,0 +1,2 @@
+hombre(juan).
+hombre(roberto).

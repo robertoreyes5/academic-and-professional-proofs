@@ -1,0 +1,80 @@
+ \connect root:negti@localhost:3306
+
+CREATE USER 'tester'@'localhost' identified by '1234';
+
+CREATE USER 'ipn'@'localhost' identified by '1234';
+DROP USER 'ipn'@'localhost' ;
+
+
+
+DROP USER 'tester'@'localhost' ;
+
+SELECT USER,HOST FROM USER;
+SELECT USER,HOST FROM MYSQL.USER;
+
+\disconnect
+\connect tester@localhost:3306
+
+mysqldump -P 3306 -u root -p --databases --force test >c:\temp\respaldo.sql
+
+**********Creando estructura tabla*********
+CREATE TABLE departamento (
+deptno int,
+nombre varchar(14),
+ubicacion varchar(50),
+);
+
+CREATE TABLE empleado (empno int, nombre varchar(10) ,puesto varchar(50),jefe int,fecha_contratacion date, salario double, comision double, deptno int) ;
+
+CREATE TABLE proyecto (prono int,nombre varchar(10),ubicacion varchar(50),deptno int) ;
+
+CREATE TABLE empleado_proyecto ( empno int,prono int,horas int) ;
+
+**************Insertando valores*******************
+
+INSERT INTO empleado VALUES (1232,'López','Vendedor',1235,'2001/01/01',12500,5000,30), (1233,'Morales','Administrador',1238,'2014-05-20',29750,null,20), (1234,'Aldama','Vendedor',1235,'2001-09-29',28500,null,30), (1235,'Huerta','Administrador',1238,'2009-05-16',24500,null,30), (1236,'Rosillo','Administrador',1238,'2017-03-13',30000,null,10), (1237,'Segura','Analista',1233,'2005-05-05',29750,null,20), (1238,'Huesca','Presidente',NULL,'2000-01-01',50000,null,10), (1239,'Rosales','Vendedor',1235,'2006-02-24',15000,2000,30), (1240,'Benitez','Asistente',1237,'2008-09-16',11000,null,20), (1241,'Corona','Asistente',1235,'2008-08-23',9500,null,30), (1242,'Domínguez','Analista',1233,'2017-07-16',30000,null,20), (1248,'Portales','Asistente',1236,'2016-02-14',13000,null,10);
+
+INSERT INTO departamento VALUES 
+(10,"Contabilidad","Aguascalientes"),
+(20,"Investigación","Guadalajara"),
+(30,"Ventas","CDMX"),
+(40,"Operaciones","Tlaxcala")
+
+INSERT INTO proyecto
+VALUES 
+(1001,"P1","Tlaxcala",20),
+(1004,"P4","CDMX",30),
+(1005,"P5","CDMX",30),
+(1008,"P6","Aguascalientes",30);
+
+INSERT INTO EMPLEADO_PROYECTO
+VALUES 
+(1231,1004,15),
+(1231,1005,12),
+(1232,1004,10),
+(1232,1008,8),
+(1234,1001,16),
+(1234,1006,15),
+(1234,1008,5),
+(1239,1005,6),
+(1248,1001,4);
+
+*****Querys********************
+
+select * from empleados 
+where puesto="Asistente"
+
+select * from empleados 
+WHERE fecha_contratacion BETWEEN "2000-01-01" AND "2005-01-01";
+
+SELECT *
+FROM empleado;
+
+SELECT *
+FROM EMPLEADO_PROYECTO;
+
+SELECT *
+FROM departamento;
+
+SELECT *
+FROM proyecto;

@@ -1,0 +1,49 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+entity sdram is
+generic(
+direc:positive:=3;
+bits:positive:=4);
+port(clk:in std_logic;
+dir:in std_logic_vector(direc-1 downto 0);
+oe:in std_logic;
+we:in std_logic;
+ce:in std_logic;
+reset  : in  std_logic;
+dati:in std_logic_vector(bits-1 downto 0);
+dato:out std_logic_vector(bits-1 downto 0);
+count  : out std_logic_vector (2 downto 0));
+end entity sdram;
+architecture cosa of sdram is
+--Memoria
+type mem is array(0 to(2**direc)-1)of std_logic_vector(bits-1 downto 0);
+signal ram:mem;
+--Aleatorio
+signal count_i: std_logic_vector (2 downto 0);
+signal feedback: std_logic;
+--Inicio
+begin
+feedback <= not(count_i(2) xor count_i(1));          
+	--Proceso
+	process(reset,clk)is begin
+	--Si hay pulso de reloj
+		if (reset = '1') then
+         count_i <= (others=>'0');
+		elsif rising_edge(clk)then
+		--Numero aleatorio
+			count_i <= count_i(1 downto 0) & feedback;
+			--Memoria
+			if we='1'and ce='1'then
+				ram(to_integer(unsigned(dir)))<=dati;
+			elsif oe='1'and ce='1'then
+				dato<=ram(to_integer(unsigned(dir)));
+		else
+			--Alta impedancia
+			dato<=(others=>'Z');
+			end if;
+		end if;
+	end process;
+	--Variable para numero aleatorio
+	count <= count_i;
+end architecture cosa;

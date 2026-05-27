@@ -1,0 +1,70 @@
+progenitor(pascual,roberto).
+pareja(manue,pascual).
+hombre(pascual).
+mujer(manue).
+padre(eliseo,pascual).
+padre(jose, jesus).
+padre(jesus, sofia).
+padre(jesus, alejandro).
+padre(jose, juan).
+padre(jose, alvaro).
+padre(jose, gustavo).
+padre (gustavo, william).
+padre(gustavo, felipe).
+padre (gustavo, oscar).
+padre(gustavo, luis).
+padre (gustavo, sandra).
+padre(juan, manuel).
+padre (manuel, esteban).
+padre (manuel, antonio).
+padre (manuel, martin).
+padre (alvaro, tomas).
+padre (danilo, anabel).
+
+
+
+madre(sofia,isabel).
+madre (magdalena, sofia).
+madre (magdalena, alejandro).
+madre (maria, juan).
+madre (maria, alvaro).
+madre (maria, gustavo).
+madre (josefina, anabel).
+madre (anabel, manuel).
+madre(clementina, esteban).
+madre (clementaina, antonio).
+madre(clementina, martin).
+
+
+
+%hijo(X, Y) / hija(X, Y) /* X es hijo/a de Y */
+hijo(X,Y):-padre(Y,X).
+hijo(X,Y):-madre(Y,X).
+%sobrino(X, Y) / sobrina (X, Y) /* X es sobrino/a de Y */
+
+sobrino(X,Y):-tio(Y,X).
+
+%primo(X, Y) / prima(X, Y) /* X es primo/a de Y */
+primo(X,Y):-padre(Z,Y),tio(Z,X).
+
+primo(X,Y):-madre(Z,X),tio(Z,Y).
+%cuñado(X, Y) / cuñada(X, Y) /* X es cuñado/a de Y */
+
+cuñado(X,Y):-hermano(Z,Y),esposos(Z,X).
+
+cuñado(X,Y):-hermano(Z,X),esposos(Z,Y).
+%abuelo(X, Y) / abuela(X, Y) /*X es abuelo/a de Y*/
+abuelo(X,Y):-padre(Z,Y),padre(X,Z).
+
+abuelo(X,Y):-madre(Z,Y),padre(X,Z).
+%tio(X, Y) / tia(X, Y) /* X es tío/a de Y */
+
+tio(X,Y):-padre(Z,Y),hermano(Z,X).
+
+tio(X,Y):-madre(Z,Y),hermano(Z,X).
+%hermano(X, Y) / hermana(X, Y) /* X es hermano/a de Y */
+
+hermano(X,Y):-padre(Z,Y),padre(Z,X).
+
+hermano(X,Y):-madre(Z,Y),madre(Z,X).
+%padre(X, Y) / madre(X, Y) /* X es padre/madre de Y */

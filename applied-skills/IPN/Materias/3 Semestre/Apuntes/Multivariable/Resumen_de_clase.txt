@@ -1,0 +1,30 @@
+Variables separables
+*Ecuaciones diferenciales
+	Tratar de reducir a asu minio expresion su funcion
+		Quitando elementos
+		Colocar su separancion
+		
+Elementos importantes Intergral
+	-Integrar
+	-Funcion
+	-Elemento con el que vamos a integrar
+	Se integran de ambos lados
+	Si no separamos no podriamos integrar
+Ecuaciones Diferenciales Exactas
+	Debe de ser una funcion llamada M y N de x y de y
+		iNDDEPENDIENTE 
+		DEPENDIENTE Y
+		Derivada parcial dm/dy
+		Al derivar se convierte en derivadas parciales 
+		´Derivamos con respécto de una variable y si son iguales precederemos dicho metodo
+		
+eCUACIONES DIFERENCIALES LINEALES 
+	dERIVCADA CON COEFICIOENTE 1 
+
+********
+	Probelmas de valor inicial 
+		Funcionesy la variable infependiente a 
+		h(a)=3acuadrada-a
+	Condiciones iniciales 
+		Ecuacion inicial 
+	

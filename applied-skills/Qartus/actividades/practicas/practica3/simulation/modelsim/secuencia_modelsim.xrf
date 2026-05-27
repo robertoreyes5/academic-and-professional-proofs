@@ -1,0 +1,17 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/IA/Documents/qartus/actividades/practicas/practica3/secuencia.vhd
+source_file = 1, c:/intelfpga_lite/20.1/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
+source_file = 1, c:/intelfpga_lite/20.1/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
+source_file = 1, c:/intelfpga_lite/20.1/quartus/libraries/vhdl/ieee/timing_b.vhd
+source_file = 1, c:/intelfpga_lite/20.1/quartus/libraries/vhdl/ieee/timing_p.vhd
+source_file = 1, C:/Users/IA/Documents/qartus/actividades/practicas/practica3/db/secuencia.cbx.xml
+design_name = Secuencia
+instance = comp, \so_o~output , so_o~output, Secuencia, 1
+instance = comp, \q_o[0]~output , q_o[0]~output, Secuencia, 1
+instance = comp, \q_o[1]~output , q_o[1]~output, Secuencia, 1
+instance = comp, \q_o[2]~output , q_o[2]~output, Secuencia, 1
+instance = comp, \q_o[3]~output , q_o[3]~output, Secuencia, 1
+instance = comp, \q_o[4]~output , q_o[4]~output, Secuencia, 1
+instance = comp, \clk_i~input , clk_i~input, Secuencia, 1
+instance = comp, \rst_i~input , rst_i~input, Secuencia, 1
+instance = comp, \~QUARTUS_CREATED_GND~I , ~QUARTUS_CREATED_GND~I, Secuencia, 1

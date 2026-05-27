@@ -1,0 +1,699 @@
+$comment
+	File created using the following command:
+		vcd file practica1.msim.vcd -direction
+$end
+$date
+	Thu Oct 06 16:51:37 2022
+$end
+$version
+	ModelSim Version 2020.1
+$end
+$timescale
+	1ps
+$end
+
+$scope module practica1_vhd_vec_tst $end
+$var wire 1 ! clk $end
+$var wire 1 " dec [3] $end
+$var wire 1 # dec [2] $end
+$var wire 1 $ dec [1] $end
+$var wire 1 % dec [0] $end
+$var wire 1 & pausa $end
+$var wire 1 ' reset $end
+$var wire 1 ( uni [3] $end
+$var wire 1 ) uni [2] $end
+$var wire 1 * uni [1] $end
+$var wire 1 + uni [0] $end
+
+$scope module i1 $end
+$var wire 1 , gnd $end
+$var wire 1 - vcc $end
+$var wire 1 . unknown $end
+$var wire 1 / devoe $end
+$var wire 1 0 devclrn $end
+$var wire 1 1 devpor $end
+$var wire 1 2 ww_devoe $end
+$var wire 1 3 ww_devclrn $end
+$var wire 1 4 ww_devpor $end
+$var wire 1 5 ww_reset $end
+$var wire 1 6 ww_clk $end
+$var wire 1 7 ww_pausa $end
+$var wire 1 8 ww_uni [3] $end
+$var wire 1 9 ww_uni [2] $end
+$var wire 1 : ww_uni [1] $end
+$var wire 1 ; ww_uni [0] $end
+$var wire 1 < ww_dec [3] $end
+$var wire 1 = ww_dec [2] $end
+$var wire 1 > ww_dec [1] $end
+$var wire 1 ? ww_dec [0] $end
+$var wire 1 @ \~QUARTUS_CREATED_GND~I_combout\ $end
+$var wire 1 A \clk~input_o\ $end
+$var wire 1 B \clk~inputCLKENA0_outclk\ $end
+$var wire 1 C \contUni[0]~3_combout\ $end
+$var wire 1 D \reset~input_o\ $end
+$var wire 1 E \pausa~input_o\ $end
+$var wire 1 F \contUni[2]~1_combout\ $end
+$var wire 1 G \contUni~2_combout\ $end
+$var wire 1 H \contUni~0_combout\ $end
+$var wire 1 I \contDec[0]~4_combout\ $end
+$var wire 1 J \contDec[0]~0_combout\ $end
+$var wire 1 K \Equal0~0_combout\ $end
+$var wire 1 L \contDec~2_combout\ $end
+$var wire 1 M \contDec[3]~3_combout\ $end
+$var wire 1 N \contDec~1_combout\ $end
+$var wire 1 O contUni [3] $end
+$var wire 1 P contUni [2] $end
+$var wire 1 Q contUni [1] $end
+$var wire 1 R contUni [0] $end
+$var wire 1 S contDec [3] $end
+$var wire 1 T contDec [2] $end
+$var wire 1 U contDec [1] $end
+$var wire 1 V contDec [0] $end
+$var wire 1 W \ALT_INV_pausa~input_o\ $end
+$var wire 1 X \ALT_INV_Equal0~0_combout\ $end
+$var wire 1 Y ALT_INV_contDec [3] $end
+$var wire 1 Z ALT_INV_contDec [2] $end
+$var wire 1 [ ALT_INV_contDec [1] $end
+$var wire 1 \ ALT_INV_contDec [0] $end
+$var wire 1 ] ALT_INV_contUni [3] $end
+$var wire 1 ^ ALT_INV_contUni [2] $end
+$var wire 1 _ ALT_INV_contUni [1] $end
+$var wire 1 ` ALT_INV_contUni [0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0!
+1&
+1'
+0,
+1-
+x.
+1/
+10
+11
+12
+13
+14
+15
+06
+17
+x@
+0A
+0B
+1C
+1D
+1E
+0F
+0G
+0H
+1I
+0J
+0K
+0L
+0M
+0N
+0W
+1X
+08
+09
+0:
+0;
+0<
+0=
+0>
+0?
+0O
+0P
+0Q
+0R
+0S
+0T
+0U
+0V
+1Y
+1Z
+1[
+1\
+1]
+1^
+1_
+1`
+0"
+0#
+0$
+0%
+0(
+0)
+0*
+0+
+$end
+#15000
+1!
+16
+1A
+1B
+1R
+0`
+0C
+1H
+1;
+1+
+#30000
+0!
+06
+0A
+0B
+#45000
+1!
+16
+1A
+1B
+0R
+1Q
+0_
+1`
+1C
+1:
+0;
+0+
+1*
+#60000
+0!
+06
+0A
+0B
+#75000
+1!
+16
+1A
+1B
+1R
+0`
+0C
+1F
+0H
+1;
+1+
+#90000
+0!
+06
+0A
+0B
+#105000
+1!
+16
+1A
+1B
+0R
+1P
+0Q
+1_
+0^
+1`
+1C
+0:
+19
+0;
+0+
+0*
+1)
+#120000
+0!
+06
+0A
+0B
+#135000
+1!
+16
+1A
+1B
+1R
+0`
+0C
+1H
+1;
+1+
+#150000
+0!
+06
+0A
+0B
+#165000
+1!
+16
+1A
+1B
+0R
+1Q
+0_
+1`
+1C
+1:
+0;
+0+
+1*
+#180000
+0!
+06
+0A
+0B
+#195000
+1!
+0'
+16
+05
+0D
+1A
+1B
+0P
+0Q
+1_
+1^
+0F
+0H
+0:
+09
+0*
+0)
+#210000
+0!
+06
+0A
+0B
+#225000
+1!
+16
+1A
+1B
+#240000
+0!
+06
+0A
+0B
+#255000
+1!
+16
+1A
+1B
+#270000
+0!
+06
+0A
+0B
+#285000
+1!
+16
+1A
+1B
+#300000
+0!
+1'
+06
+15
+1D
+0A
+0B
+#315000
+1!
+16
+1A
+1B
+1R
+0`
+0C
+1H
+1;
+1+
+#330000
+0!
+06
+0A
+0B
+#345000
+1!
+0&
+16
+07
+0E
+1A
+1B
+1W
+#360000
+0!
+06
+0A
+0B
+#375000
+1!
+16
+1A
+1B
+#390000
+0!
+06
+0A
+0B
+#405000
+1!
+16
+1A
+1B
+#420000
+0!
+06
+0A
+0B
+#435000
+1!
+16
+1A
+1B
+#450000
+0!
+06
+0A
+0B
+#465000
+1!
+16
+1A
+1B
+#480000
+0!
+06
+0A
+0B
+#495000
+1!
+16
+1A
+1B
+#510000
+0!
+06
+0A
+0B
+#525000
+1!
+16
+1A
+1B
+#540000
+0!
+06
+0A
+0B
+#555000
+1!
+16
+1A
+1B
+#570000
+0!
+06
+0A
+0B
+#585000
+1!
+1&
+16
+17
+1E
+1A
+1B
+0W
+0R
+1Q
+0_
+1`
+1C
+1:
+0;
+0+
+1*
+#600000
+0!
+06
+0A
+0B
+#615000
+1!
+16
+1A
+1B
+1R
+0`
+0C
+1F
+0H
+1;
+1+
+#630000
+0!
+06
+0A
+0B
+#645000
+1!
+16
+1A
+1B
+0R
+1P
+0Q
+1_
+0^
+1`
+1C
+0:
+19
+0;
+0+
+0*
+1)
+#660000
+0!
+06
+0A
+0B
+#675000
+1!
+16
+1A
+1B
+1R
+0`
+0C
+1H
+1;
+1+
+#690000
+0!
+06
+0A
+0B
+#705000
+1!
+16
+1A
+1B
+0R
+1Q
+0_
+1`
+1C
+1:
+0;
+0+
+1*
+#720000
+0!
+06
+0A
+0B
+#735000
+1!
+16
+1A
+1B
+1R
+0`
+0C
+0F
+1G
+0H
+1;
+1+
+#750000
+0!
+06
+0A
+0B
+#765000
+1!
+16
+1A
+1B
+0R
+0P
+1O
+0Q
+1_
+0]
+1^
+1`
+1C
+0:
+18
+09
+0;
+0+
+0*
+0)
+1(
+#780000
+0!
+06
+0A
+0B
+#795000
+1!
+16
+1A
+1B
+1R
+0`
+0C
+0G
+1J
+1K
+0X
+1;
+1+
+#810000
+0!
+06
+0A
+0B
+#825000
+1!
+16
+1A
+1B
+0R
+0O
+1V
+0\
+1]
+1`
+1C
+0J
+0K
+0I
+1N
+1X
+1?
+08
+0;
+1%
+0+
+0(
+#840000
+0!
+06
+0A
+0B
+#855000
+1!
+16
+1A
+1B
+1R
+0`
+0C
+1H
+1;
+1+
+#870000
+0!
+06
+0A
+0B
+#885000
+1!
+16
+1A
+1B
+0R
+1Q
+0_
+1`
+1C
+1:
+0;
+0+
+1*
+#900000
+0!
+06
+0A
+0B
+#915000
+1!
+16
+1A
+1B
+1R
+0`
+0C
+1F
+0H
+1;
+1+
+#930000
+0!
+06
+0A
+0B
+#945000
+1!
+16
+1A
+1B
+0R
+1P
+0Q
+1_
+0^
+1`
+1C
+0:
+19
+0;
+0+
+0*
+1)
+#960000
+0!
+06
+0A
+0B
+#975000
+1!
+16
+1A
+1B
+1R
+0`
+0C
+1H
+1;
+1+
+#990000
+0!
+06
+0A
+0B
+#1000000

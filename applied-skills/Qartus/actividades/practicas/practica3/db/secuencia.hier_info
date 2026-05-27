@@ -1,0 +1,15 @@
+|secuencia
+clk_i => auxQ[0].CLK
+clk_i => auxQ[1].CLK
+clk_i => auxQ[2].CLK
+clk_i => auxQ[3].CLK
+clk_i => auxQ[4].CLK
+rst_i => Genera.IN1
+so_o <= so_o.DB_MAX_OUTPUT_PORT_TYPE
+q_o[0] <= auxQ[0].DB_MAX_OUTPUT_PORT_TYPE
+q_o[1] <= auxQ[1].DB_MAX_OUTPUT_PORT_TYPE
+q_o[2] <= auxQ[2].DB_MAX_OUTPUT_PORT_TYPE
+q_o[3] <= auxQ[3].DB_MAX_OUTPUT_PORT_TYPE
+q_o[4] <= auxQ[4].DB_MAX_OUTPUT_PORT_TYPE
+
+

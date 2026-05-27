@@ -1,0 +1,19 @@
+|tarea1
+reset => contador[0].ACLR
+reset => contador[1].ACLR
+reset => contador[2].ACLR
+reset => contador[3].ACLR
+clk => contador[0].CLK
+clk => contador[1].CLK
+clk => contador[2].CLK
+clk => contador[3].CLK
+x => contador.OUTPUTSELECT
+x => contador.OUTPUTSELECT
+x => contador.OUTPUTSELECT
+x => contador.OUTPUTSELECT
+Q[0] <= contador[0].DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= contador[1].DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= contador[2].DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= contador[3].DB_MAX_OUTPUT_PORT_TYPE
+
+

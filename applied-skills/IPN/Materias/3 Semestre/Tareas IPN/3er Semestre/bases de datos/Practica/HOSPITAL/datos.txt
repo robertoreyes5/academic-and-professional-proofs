@@ -1,0 +1,89 @@
+INSERT INTO hospital VALUES
+(01,'Los angeles','Calzada de los heroes SN col TEcamachalco Estado de mexico','0384950116','2020-03-25'),
+(02,'Olimpo','Calle revolucion #343 Centro Sur Estado de Mexico','4873945808','2000-12-09'),
+(03,'Paseo Colosal','Americas #68 Col uruapan Estado de México','4692327576','1996-06-25'),
+(04,'Ventisca','Pablo Picazzo SN Esquina Niños Heroes, Col Centro Michoacan','0869947322','1997-01-23'),
+(05,'Sauron Heaven','Calle Buenavista #122-B Col Adinerados Ciudad P. Luche','2822088749','1777-08-12'),
+(06,'highway to hell','Insurgentes Abanderados 434 Col Lindavista Uruapan, Michoacán','7126166613','1987-08-28'),
+(07,'Paraiso','Calle Benito Juares SN Col Altamirano Cuautitlan, Estado de Mexico','1045057790','1974-05-23'),
+(08,'stairway to heaven','Calzada Abasolo #666 Col de los colibries, Huauchinango Puebla','3492467029','1798-08-02'),
+(09,'knockin on heaven's door','Calle azalea #1703 Col Reforma, Apizaco Tlaxcala','4945641251','1990-07-15'),
+(10,'Laichzeit','Calle Venustiano Carranza #122-B Col Tlahuicole, Amaxac, Ciudad P. Luche','9006502659','1889-02-22')
+;
+INSERT INTO medico VALUES
+(101,'Francisco Manuel Vela',09),
+(102,'Abdellah Redondo',02),
+(103,'Faustino Mercado',06),
+(104,'Alejandro Jose Vega',05)
+(105,'Octavio Tudela',01)
+;
+
+INSERT INTO especialidad VALUES
+(09,'Cardiologia',101),
+(02,'Cirugia',102),
+(01,'Pediatría',105),
+(05,'Dermatología',104),
+(06,'Nefrologia',103);
+
+INSERT INTO planta VALUES
+(201,01,2,3,101,09),
+(202,01,1,5,101,09),
+(203,02,1,3,101,09),
+(204,03,5,6,102,02),
+(205,04,5,4,102,02),
+(206,05,5,5,102,02),
+(207,05,1,2,102,02),
+(208,05,7,1,103,06),
+(209,06,5,8,103,06),
+(210,06,9,2,103,06),
+(211,07,3,2,103,06),
+(212,08,7,3,104,05),
+(213,09,4,1,105,01),
+(214,10,9,9,105,01);
+
+
+INSERT INTO habitacion VALUES
+(301,201,09,'publica',1000,6),
+(302,201,09,'publica',1500,5),
+(303,202,09,'privada',1222,7),
+(304,211,06,'privada',1786,2),
+(305,203,09,'publica',1900,2),
+(306,204,02,'privada',3404,6),
+(307,205,02,'publica',3400,7),
+(308,205,02,'privada',8900,3),
+(309,206,02,'privada',1223,3),
+(310,207,02,'publica',6777,8),
+(311,212,05,'privada',8999,3),
+(312,214,05,'privada',3644,3),
+(313,208,06,'publica',8544,7),
+(314,209,06,'privada',9088,3),
+(315,210,06,'publica',1900,9)
+;
+
+INSERT INTO paciente VALUES
+(401,'VAGP770826HSRLTD71','2048IS4BNXF','PEDRO VALDEZ GUTIERREZ','Calle Laberintos #25 Col Cañaveral Tlaxcala','8845636109'),
+(402,'GOCJ770826HJCNSS12','1Y5MPD6B901','Jesus Castro Gonzales','Insurgentes 653 Col Labastida Cuernavaca, Morelos','9257636802'),
+(403,'PEPR770826MCHRRS11','T9WKC4JPIK2','Rosa Maria Perez Perez','Av Luis Doinaldo Colosio SN Hermosillo Sonora','4351091735'),
+(404,'DERJ770826MCCLDL73','337V370GF13','Julio Cesar Rodriguez Delgado','Av Huauchinango #545 Majahual, Quintana Roo','5573353591'),
+(405,'OIRM770826MQTRVR98','GZ9PY9CT3E2','Maria Rivera Ortiz','Calle mexico 77 Col El rosal Culiacan Sinaloa','8643823272'),
+(406,'AAMS770826MOCLNR31','49T3I3M3CA0','Sergio Muñoz Alvarez','Prol Tijerina sn Chalma, Chiautempan Tlaxcala','9728247528'),
+(407,'REME770826MMNYDD65','O47PM7H09AJ','Eduardo Medina Reyes','San diego 707 Cuernavaca,Morelos','1182322610'),
+(408,'REME770826MMNYDD65','O9ZD8D2TDK7','Fernando Muñoz Delgado','20 deNoviembre #44-H Col centro, Tlaxcala, Tlaxcala','5676610500'),
+(409,'RUSG770826HCMZNS19','V0AC178YREO','Gustavo Sanchez Ruiz','Calle Tlahuicole 343 La joya, Centro, Tlaxcala','4492095315'),
+(410,'GOVI770826MPLNRS11','QA31M093HBK','Isabel Vargas Gonzalez','Mariano Matamoros 33 Santa anita, huiloac, Tlaxcala','8011890909')
+;
+
+
+
+INSERT INTO ingreso (idIngreso,Fecha_ingreso,Fecha_alta,Tratamiento,Diagnostico,idHabitacion,idPlanta,idHospital,idMedico,idPaciente)VALUES
+(501,'2000-12-12','2000-08-15','dos cucharadas de paracetamol y descanso','fractura craneoencefalica',301 ,201 ,09 ,101 , 401),
+(502,'2008-07-24','2000-12-12','quimioterapia y medicamentos','gingivitis',302 ,201 ,09 , 101, 402),
+(503,'2006-02-23','2004-02-14','cirugia programada en 2 meses','diarrea cronica', 303, 202,09 ,102 , 403),
+(504,'2006-06-02','2008-06-24','ibuprofeno de 500 ml cada 24 hr','insuficiencia renal', 304,211,06 ,102 , 404),
+(505,'2002-07-23','2008-06-24','un mejoralito de la farmacia','cancer de prostata', 305, 203,09 , 103, 405),
+(506,'2005-02-04','2006-06-02','amoxicilina inyectada 20 ml','parkinson juvenil', 306,204 ,02 ,103 , 406),
+(507,'2008-06-24','2006-02-23','tomografias para resultados mas especificos','insomnio severo cronico degenerativo', 307, 205,02 ,104 , 407),
+(508,'2008-11-18','2006-02-23','un besito de mama y te caliente','sindrome de inmunoinsuficiencia humana', 208, 205, 02,104 , 408),
+(509,'2004-02-14','2008-11-18','dos cucharadas de mesamestazona de 500mg','tumor maligno en el esternocleidomastoideo', 315, 210, 06,105 ,409 ),
+(510,'2000-08-15','2004-02-14','coca cola de 600 con 2 huevos y limon','contusion cerebral', 313,208 ,06 , 105, 410),
+;

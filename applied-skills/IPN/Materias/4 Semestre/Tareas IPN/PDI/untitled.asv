@@ -1,0 +1,10 @@
+cls; clear all; close all;
+%escala de grisises 256
+[rgb,map]=imread("descarga.jpg");
+%r=rgb(1,1,1)
+r=rgb(:,:,1);
+g=rgb(:,:,2);
+b=rgb(:,:,3);
+
+I=rgb2gray(rgb);
+[Count,X]=imnist(I);

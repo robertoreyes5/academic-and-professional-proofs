@@ -1,0 +1,12 @@
+|sdram
+reset => count_i[0].ACLR
+reset => count_i[1].ACLR
+reset => count_i[2].ACLR
+clk => count_i[0].CLK
+clk => count_i[1].CLK
+clk => count_i[2].CLK
+count[0] <= count_i[0].DB_MAX_OUTPUT_PORT_TYPE
+count[1] <= count_i[1].DB_MAX_OUTPUT_PORT_TYPE
+count[2] <= count_i[2].DB_MAX_OUTPUT_PORT_TYPE
+
+
